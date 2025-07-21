@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -9,33 +8,50 @@
 </head>
 <body>
     <header>
-        <h1>Techtron PC</h1>
-        <p>IT Servis i Digitalna Rešenja</p>
+        <div class="container">
+            <h1>Techtron PC</h1>
+            <nav>
+                <ul>
+                    <li><a href="#usluge">Usluge</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="services">
-        <h2>Naše Usluge</h2>
-        <div class="service-grid">
-            <div class="card">🛠️ Servis</div>
-            <div class="card">🌐 Mreže</div>
-            <div class="card">📷 Kamere</div>
-            <div class="card">🖥️ Web dizajn</div>
+    <section class="hero">
+        <div class="container">
+            <h2>IT Servis i Digitalna Rešenja</h2>
+            <p>Servis računara | Mreže | Kamere | Web dizajn</p>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Kontaktiraj nas</h2>
-        <p>Email: <a href="mailto:techtronpc@gmail.com">techtronpc@gmail.com</a></p>
-        <p>Telefon: +381 66 953 8121</p>
+    <section id="usluge" class="services">
+        <div class="container">
+            <h2>Naše Usluge</h2>
+            <div class="service-boxes">
+                <div class="box">Servis računara i laptopova</div>
+                <div class="box">Mrežna rešenja i umrežavanje</div>
+                <div class="box">Ugradnja sigurnosnih kamera</div>
+                <div class="box">Web dizajn i izrada sajta</div>
+                <div class="box">Otkup i prodaja opreme</div>
+            </div>
+        </div>
     </section>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeBtn">&times;</span>
-            <p>Dobrodošli na naš sajt!</p>
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Email: techtronpc@gmail.com</p>
+            <p>Telefon: +381 66 953 8121</p>
+            <p>Adresa: Alekse Šantića 46, Šabac</p>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Techtron PC. Sva prava zadržana.</p>
+        </div>
+    </footer>
 </body>
 </html>
