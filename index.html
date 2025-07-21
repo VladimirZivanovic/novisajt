@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techtron PC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>Techtron PC</h1>
+    <ul>
+      <li><a href="#usluge">Usluge</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>IT Servis i Digitalna Rešenja</h2>
+    <p>Prodaja | Otkup | Popravka | Umrežavanje</p>
+  </header>
+
+  <section id="usluge">
+    <h3>Naše Usluge</h3>
+    <div class="grid">
+      <div class="card" onclick="showService('Servis računara i laptopova')">🛠️ Servis</div>
+      <div class="card" onclick="showService('Mrežna rešenja')">🌐 Mreže</div>
+      <div class="card" onclick="showService('Sigurnosne kamere')">📷 Kamere</div>
+      <div class="card" onclick="showService('Web sajtovi i logotipi')">🖥️ Web dizajn</div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h3>Kontaktiraj nas</h3>
+    <p>Email: <a href="mailto:techtronpc@gmail.com">techtronpc@gmail.com</a></p>
+    <p>Telefon: +381 66 953 8121</p>
+  </section>
+
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+      <span id="close-btn" onclick="hidePopup()">×</span>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
